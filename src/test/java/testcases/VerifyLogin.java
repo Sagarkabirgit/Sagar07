@@ -19,6 +19,7 @@ public class VerifyLogin {
 	@BeforeMethod(alwaysRun = true)
 	public void launchApplication()
 	{
+		//Launch Browser
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.get("https://demo.guru99.com/test/newtours/");
